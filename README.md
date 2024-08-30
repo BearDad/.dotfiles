@@ -4,6 +4,8 @@
 
 ---
 
+![terminal](/snaps/tmux+nvim.png)
+
 - utilities
   - stow
   - fastfetch
@@ -17,5 +19,3 @@
   - tmux
 
 ---
-
-![terminal](/snaps/tmux+nvim.png)
