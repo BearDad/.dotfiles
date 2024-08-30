@@ -17,3 +17,5 @@
   - tmux
 
 ---
+
+![terminal]("~/.dotfiles/snaps/tmux+nvim.png")
