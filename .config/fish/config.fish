@@ -43,5 +43,4 @@ if status is-interactive
     alias bat="batcat"
     alias lg="lazygit"
     oh-my-posh init fish --config ~/tokyonight.toml | source
-    fetch
 end
