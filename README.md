@@ -18,4 +18,4 @@
 
 ---
 
-![terminal]("~/.dotfiles/snaps/tmux+nvim.png")
+![terminal](".dotfiles/snaps/tmux+nvim.png")
