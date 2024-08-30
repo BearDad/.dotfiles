@@ -42,6 +42,6 @@ if status is-interactive
     alias vim="nvim"
     alias bat="batcat"
     alias lg="lazygit"
-    oh-my-posh init fish --config ~/tokyonight.toml | source
+    oh-my-posh init fish --config '~/.dotfiles/.config/ohmyposh/themes/tokyonight.toml' | source
     fetch
 end

@@ -60,3 +60,6 @@ brew install yazi zoxide
 
 # Install oh-my-posh
 brew install oh-my-posh
+
+# TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
