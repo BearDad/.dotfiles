@@ -14,7 +14,6 @@
   - GitHubcli(gh)
   - lazygit
   - oh-my-posh
-  - ranger
   - bat
   - tmux
 
