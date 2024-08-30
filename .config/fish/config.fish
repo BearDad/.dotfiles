@@ -22,7 +22,7 @@ if status is-interactive
     zoxide init fish | source
     alias cd="z"
     alias cdi="zi"
-    alias fetch="pokeget random --shiny --hide-name | fastfetch --file-raw -"
+    alias fetch="fastfetch"
     alias t="tmux"
     alias td="tmux detach"
     alias py="python3"
@@ -43,4 +43,5 @@ if status is-interactive
     alias bat="batcat"
     alias lg="lazygit"
     oh-my-posh init fish --config '~/kuma-dotfiles/ohmyposh/themes/tokyotheme.toml' | source
+    fetch
 end
