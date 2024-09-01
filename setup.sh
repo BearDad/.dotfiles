@@ -63,3 +63,6 @@ brew install oh-my-posh
 
 # TPM
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# omakub install
+# wget -qO- https://omakub.org/install | bash

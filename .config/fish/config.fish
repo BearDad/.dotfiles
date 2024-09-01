@@ -22,7 +22,7 @@ if status is-interactive
     zoxide init fish | source
     alias cd="z"
     alias cdi="zi"
-    alias fetch="fastfetch"
+    alias fetch="clear && fastfetch"
     alias t="tmux"
     alias td="tmux detach"
     alias py="python3"
