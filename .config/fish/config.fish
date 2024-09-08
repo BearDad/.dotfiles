@@ -45,5 +45,12 @@ if status is-interactive
     oh-my-posh init fish --config ~/tokyonight.toml | source
 end
 
+set -Ux FZF_DEFAULT_OPTS "
+	--color=fg:$subtle,bg:$base,hl:$rose
+	--color=fg+:$text,bg+:$overlay,hl+:$rose
+	--color=border:$highlightMed,header:$pine,gutter:$base
+	--color=spinner:$gold,info:$foam
+	--color=pointer:$iris,marker:$love,prompt:$subtle"
+
 # Created by `pipx` on 2024-09-04 21:21:33
 set PATH $PATH /home/bd23/.local/bin
