@@ -44,3 +44,6 @@ if status is-interactive
     alias lg="lazygit"
     oh-my-posh init fish --config ~/tokyonight.toml | source
 end
+
+# Created by `pipx` on 2024-09-04 21:21:33
+set PATH $PATH /home/bd23/.local/bin
