@@ -42,7 +42,7 @@ if status is-interactive
     alias vim="nvim"
     alias bat="batcat"
     alias lg="lazygit"
-    oh-my-posh init fish --config ~/tokyonight.toml | source
+    # oh-my-posh init fish --config ~/tokyonight.toml | source
 end
 
 set -Ux FZF_DEFAULT_OPTS "
@@ -54,3 +54,10 @@ set -Ux FZF_DEFAULT_OPTS "
 
 # Created by `pipx` on 2024-09-04 21:21:33
 set PATH $PATH /home/bd23/.local/bin
+function starship_transient_prompt_func
+    starship module character
+
+end
+
+starship init fish | source
+enable_transience
