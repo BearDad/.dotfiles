@@ -1,4 +1,4 @@
-format = "$username $directory $git_branch$fill $time\n  [󱞪](fg:iris) "
+format = "$username $directory $git_branch $git_metrics $cmd_duration   $fill $python$lua$golang$package $localip $time\n  [󱞪](fg:iris) "
 palette = "rose-pine"
 
 [palettes.rose-pine]
@@ -12,12 +12,16 @@ iris = '#c4a7e7'
 
 [directory]
 format = "[](fg:overlay)[ $path ]($style)[](fg:overlay)"
-style = "bg:overlay fg:pine"
-truncation_length = 3
+style = "bg:overlay fg:gold"
+truncation_length = 2
 truncation_symbol = "…/"
 
-[directory.substitutions]
+[cmd_duration]
+min_time = 100
+style = "bg:overlay fg:rose"
+format = "[](fg:overlay)[󱎫$duration ]($style)[](fg:overlay)"
 
+[directory.substitutions]
 dotfiles = " dot"
 Documents = "󰈙"
 Downloads = " "
@@ -26,11 +30,40 @@ Pictures = " "
 [fill]
 style = "fg:overlay"
 symbol = " "
+[package]
+format = "[](fg:overlay)[$version ]($style)[](fg:overlay)"
+
+[golang]
+style = "bg:overlay fg:foam"
+format = "[](fg:overlay)[ $symbol $version ]($style)[](fg:overlay)"
+
+[lua]
+style = "bg:overlay fg:pine"
+format = "[](fg:overlay)[ $symbol $version ]($style)[](fg:overlay)"
+
+[python]
+style = "bg:overlay fg:pine"
+format = "[](fg:overlay)[ $symbol $version ]($style)[](fg:overlay)"
+disabled = false
+symbol = '👾 '
 
 [git_branch]
 format = "[](fg:overlay)[ $symbol $branch ]($style)[](fg:overlay)"
 style = "bg:overlay fg:foam"
 symbol = ""
+
+[git_metrics]
+disabled = false
+format = '[](fg:overlay)[+$added]($added_style)[ -$deleted]($deleted_style)[](fg:overlay) '
+only_nonzero_diffs = true
+added_style = 'bg:overlay fg:pine'
+deleted_style = 'bg:overlay fg:love'
+[localip]
+ssh_only = false
+style = "bg:overlay fg:iris"
+format = '[](fg:overlay)[󱘖 $localipv4]($style)[](fg:overlay) '
+
+disabled = false
 
 [time]
 disabled = false
@@ -45,6 +78,3 @@ format = "[](fg:overlay)[ 󰧱 $user ]($style)[](fg:overlay)"
 show_always = true
 style_root = "bg:overlay fg:iris"
 style_user = "bg:overlay fg:iris"
-
-[character]
-vimcmd_symbol = '[V](bold green) '
