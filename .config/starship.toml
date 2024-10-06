@@ -1,4 +1,20 @@
-format = "$username $directory $git_branch $git_metrics $cmd_duration   $fill $python$lua$golang$package $localip $time\n  [󱞪](fg:iris) "
+format = """
+$username \
+$directory \
+$git_branch \
+$git_metrics \
+$cmd_duration \
+$fill\
+$python\
+$lua\
+$golang\
+$package\
+$localip\
+$time\n\
+[󱞪](fg:iris)
+"""
+
+
 palette = "rose-pine"
 
 [palettes.rose-pine]
@@ -35,15 +51,15 @@ format = "[](fg:overlay)[$version ]($style)[](fg:overlay)"
 
 [golang]
 style = "bg:overlay fg:foam"
-format = "[](fg:overlay)[ $symbol $version ]($style)[](fg:overlay)"
+format = "[](fg:overlay)[$symbol$version ]($style)[](fg:overlay)"
 
 [lua]
 style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[ $symbol $version ]($style)[](fg:overlay)"
+format = "[](fg:overlay)[$symbol$version ]($style)[](fg:overlay)"
 
 [python]
 style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[ $symbol $version ]($style)[](fg:overlay)"
+format = "[](fg:overlay)[$symbol$version ]($style)[](fg:overlay) "
 disabled = false
 symbol = '👾 '
 
@@ -54,7 +70,7 @@ symbol = ""
 
 [git_metrics]
 disabled = false
-format = '[](fg:overlay)[+$added]($added_style)[ -$deleted]($deleted_style)[](fg:overlay) '
+format = '[](fg:overlay)[+$added]($added_style)[ -$deleted]($deleted_style)[](fg:overlay)'
 only_nonzero_diffs = true
 added_style = 'bg:overlay fg:pine'
 deleted_style = 'bg:overlay fg:love'
