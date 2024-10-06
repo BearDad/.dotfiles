@@ -58,6 +58,8 @@ format = '[î‚¶](fg:overlay)[+$added]($added_style)[ -$deleted]($deleted_style)[î
 only_nonzero_diffs = true
 added_style = 'bg:overlay fg:pine'
 deleted_style = 'bg:overlay fg:love'
+
+
 [localip]
 ssh_only = false
 style = "bg:overlay fg:iris"
