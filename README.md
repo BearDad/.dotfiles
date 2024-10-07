@@ -13,7 +13,7 @@
   - nvim
   - GitHubcli(gh)
   - lazygit
-  - oh-my-posh
+  - Starship
   - bat
   - tmux
 
