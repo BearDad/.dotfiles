@@ -11,5 +11,7 @@ return {
       desc = "Markdown preview",
     },
   },
-  opts = {},
+  opts = {
+    toc = false,
+  },
 }

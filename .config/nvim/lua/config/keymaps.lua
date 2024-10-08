@@ -5,3 +5,9 @@
 vim.keymap.set("n", "<leader>n", "<cmd>NerdIcons<cr>", { desc = "Open NerdIcons" })
 vim.keymap.set({ "n", "v" }, "<C-p>", '"*p', { desc = "Paste from selection clipboard" })
 vim.keymap.set({ "n", "v" }, "p", '"+p', { desc = "Paste from system clipboard" })
+vim.keymap.set(
+  { "v", "n" },
+  "<leader>t",
+  "<cmd>TSBufToggle highlight<cr>",
+  { desc = "Toggle Tree-sitter highlighting" }
+)
