@@ -9,6 +9,7 @@ if status is-interactive
     export BAT_THEME='Catppuccin Mocha'
     export PATH="$PATH:$HOME/.cargo/bin"
     export PATH="$PATH:$HOME/../../usr/local/texlive/2024/bin/x86_64-linux/"
+    export PATH="$PATH:$HOME/tmux/"
     # alias vim="nvim"
 end
 if status is-interactive
