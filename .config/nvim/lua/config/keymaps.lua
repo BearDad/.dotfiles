@@ -11,3 +11,4 @@ vim.keymap.set(
   "<cmd>TSBufToggle highlight<cr>",
   { desc = "Toggle Tree-sitter highlighting" }
 )
+vim.keymap.set("n", "<leader>z", ":!zathura <C-r>=expand('%:r')<cr>.pdf &<cr>", { desc = "Open PDF" })
