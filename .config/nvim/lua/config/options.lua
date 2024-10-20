@@ -7,3 +7,4 @@
 
 vim.g.vimtex_view_method = ""
 vim.g.vimtex_compiler_method = "latexmk"
+vim.opt.guicursor = "a:block"
